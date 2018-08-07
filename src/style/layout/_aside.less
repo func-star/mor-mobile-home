@@ -1,0 +1,43 @@
+.page-aside {
+	width: @page-aside-width-normal;
+	border-right: 1px solid @border-color;
+	padding-top: 20px;
+	.menu-search {
+		padding: 10px 15px;
+	}
+	.menu-group {
+		.menu-item {
+			height: 45px;
+			padding-left: 15px;
+			color: #999;
+			&.no-child {
+				color: #2f343a;
+				transition: all 0.2s ease-in-out;
+				&:hover {
+					background-color: #f3f3f3;
+				}
+			}
+		}
+		.menu-child-group {
+			overflow: hidden;
+			&.hide-menu {
+				height: 0;
+			}
+		}
+		.menu-child {
+			height: 38px;
+			color: #2f343a;
+			padding-left: 35px;
+			&:hover {
+				background-color: #f3f3f3;
+			}
+		}
+		.menu-item, .menu-child {
+			&.active {
+				color: #39f;
+				border-right: 2px solid #39f;
+			}
+		}
+	}
+}
+
