@@ -1,35 +1,39 @@
 /***
  * created by yangxi 2018/1/8
  */
-import React, { Component } from 'react';
-import Link from 'components/router/link';
-import menusData from 'data/menus';
-import classNames from 'classnames';
-import Util from 'core/util';
-import Route from 'components/router/route';
+import React, { Component } from 'react'
+import Link from 'components/router/link'
+import Menus from 'data/menus'
+import classNames from 'classnames'
+import Util from 'core/util'
+import Route from 'components/router/route'
 
 export default class Aside extends Component {
-	menus = menusData.menus;
-	menusList = [];
+	constructor (props) {
+		super(props)
+		this.menus = Menus.getMenus()
+	}
+	
+	menusList = []
 	
 	componentWillMount () {
 		this.menus.forEach(v => {
 			if (v.children instanceof Array && v.children.length > 0) {
-				this.menusList = this.menusList.concat(v.children);
+				this.menusList = this.menusList.concat(v.children)
 			}
-		});
+		})
 	}
 	
 	isHttpUrl (str) {
 		if (str.indexOf('//') === 0 || str.indexOf('http') === 0) {
-			return true;
+			return true
 		}
-		return false;
+		return false
 	}
 	
 	toogleMenu (index) {
-		this.menus[index].hideChild = !this.menus[index].hideChild;
-		this.setState({});
+		this.menus[index].hideChild = !this.menus[index].hideChild
+		this.setState({})
 	}
 	
 	render () {
@@ -47,18 +51,20 @@ export default class Aside extends Component {
 									<i className="iconfont icon-up p-r-20 f-14"></i>
 								</If>
 							</div>
-							<div className={classNames('menu-child-group', {'hide-menu': item.hideChild})}>
+							<div className={classNames('menu-child-group', { 'hide-menu': item.hideChild })}>
 								<For each="child" of={item.children} index="childIdx">
 									<If condition={this.isHttpUrl(child.url)}>
-										<a className="menu-child flex-center-y" href={child.url} key={'child' + childIdx}>
-											<span>{child.name}</span>
+										<a className="menu-child flex-center-x flex-direction-col" href={child.url} key={'child' + childIdx}>
+											<div className="name">{child.name}</div>
+											<div className="name1">{child.name2}</div>
 										</a>
 										<Else />
 										<Link to={child.url || '.'}
-											className="menu-child flex-center-y"
+											className="menu-child flex-center-x flex-direction-col"
 											key={'child' + childIdx}
 											activeClassName="active">
-											<span>{child.name}</span>
+											<div className="name">{child.name}</div>
+											<div className="name1">{child.name2}</div>
 										</Link>
 									</If>
 								</For>
@@ -80,6 +86,6 @@ export default class Aside extends Component {
 					</For>
 				</div>
 			</div>
-		);
+		)
 	}
 }
