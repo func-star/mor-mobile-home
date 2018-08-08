@@ -1,14 +1,13 @@
 .page-aside {
 	width: @page-aside-width-normal;
 	border-right: 1px solid @border-color;
-	padding: 20px 10px 20px 0;
+	padding: 20px 0 40px 0;
 	.menu-search {
 		padding: 10px 15px;
 	}
 	.menu-group {
 		.menu-item {
 			height: 45px;
-			padding-left: 15px;
 			color: @primary-color;
 			&.no-child {
 				color: #2f343a;
@@ -18,22 +17,17 @@
 				}
 			}
 		}
-		.menu-child-group {
-			overflow: hidden;
-			&.hide-menu {
-				height: 0;
-			}
-		}
 		.menu-child {
-			height: 50px;
+			height: 55px;
 			color: #2f343a;
-			padding-left: 35px;
+			padding: 0 20px;
 			transition: all 0.2s ease-in-out;
 			&:hover {
 				background-color: #f3f3f3;
 			}
 			.name1 {
 				font-size: 12px;
+				margin-top: 3px;
 				color: rgba(69, 90, 100, 0.6);
 			}
 		}

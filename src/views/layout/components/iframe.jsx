@@ -12,10 +12,12 @@ export default class iframe extends Component {
 	
 	render () {
 		return (
-			<div className="page-iframe">
-				<div className="page-iframe-header"></div>
-				<div className="page-iframe-wrap w-full">
-					<iframe src="http://mor.monajs.cn/docs" frameBorder="0" className="full"></iframe>
+			<div className="page-iframe h-full o-a">
+				<div className="pape-iframe-content">
+					<div className="page-iframe-header"></div>
+					<div className="page-iframe-wrap w-full">
+						<iframe src="http://mor.monajs.cn/docs" frameBorder="0" className="full"></iframe>
+					</div>
 				</div>
 			</div>
 		)
