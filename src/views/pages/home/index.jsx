@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import Util from 'core/util';
-import Route from 'router/route';
+import React, { Component } from 'react'
+import PageModel from 'components/pageModel'
 
 export default class Home extends Component {
 	render () {
+		const code = '(num) => num + 1'
 		return (
-			<div>123</div>
-		);
+			<PageModel name="a" desc="b" classsName="abc">{code}</PageModel>
+		)
 	}
 }

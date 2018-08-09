@@ -13,8 +13,9 @@ export default {
 			},
 		},
 		{
+			layout: DefaultLayout,
 			routes: {
-				'404': NoMatch,
+				'test/:name': NoMatch,
 			},
 		},
 	],

@@ -5,7 +5,7 @@ import Route from 'router/route';
 export default class NoMatch extends Component {
 	render () {
 		return (
-			<div>123</div>
+			<div>321</div>
 		);
 	}
 }

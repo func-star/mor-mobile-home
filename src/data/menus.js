@@ -9,10 +9,10 @@ class Menus {
 		name: '开发指南',
 		children: [{
 			name: '介绍',
-			url: ''
+			url: 'home'
 		}, {
 			name: '快速上手',
-			url: ''
+			url: 'test'
 		}]
 	}]
 	

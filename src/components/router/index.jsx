@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Url from 'core/url';
 import Route from './route';
 
 export default class Router extends Component {
@@ -30,10 +29,10 @@ export default class Router extends Component {
 			return null;
 		}
 		//判断页面是否真的改变,如果不变，则ctrl不变
-		if (this.page != RoutePage) {
+		if (this.page !== RoutePage) {
 			this.ctrl = null;
 		}
-		if (this.page != RoutePage && RoutePage.Controller) {
+		if (this.page !== RoutePage && RoutePage.Controller) {
 			this.ctrl = new RoutePage.Controller;
 		}
 		this.page = RoutePage;
