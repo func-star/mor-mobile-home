@@ -35,8 +35,9 @@ export default class Aside extends Component {
 		return false
 	}
 	
-	toogleMenu (index) {
-		console.log(index)
+	toogleMenu (index, isOpen) {
+		this.menus[index].isOpen = isOpen
+		this.setState({})
 	}
 	
 	render () {
@@ -45,14 +46,14 @@ export default class Aside extends Component {
 				<div className="menu-group">
 					<For each="item" of={this.menus} index="index">
 						<If condition={item.children && item.children.length > 0}>
-							<Drop key={index} onChange={this.toogleMenu.bind(this, index)} isOpen={true}>
+							<Drop key={index} onChange={this.toogleMenu.bind(this, index)} isOpen={!item.isOpen}>
 								<DropTitle className="menu-item flex-center-y c-po">
 									<i className={classNames('iconfont ' + item.icon)}></i>
 									<div className="flex-1">{item.name}</div>
-									<If condition={item.hideChild}>
-										<i className="iconfont icon-down p-r-20 f-14"></i>
+									<If condition={item.isOpen}>
+										<i className="iconfont icon-arrow-up p-r-20"></i>
 										<Else />
-										<i className="iconfont icon-up p-r-20 f-14"></i>
+										<i className="iconfont icon-arrow-down p-r-20"></i>
 									</If>
 								</DropTitle>
 								<DropContent className="menu-child-group">

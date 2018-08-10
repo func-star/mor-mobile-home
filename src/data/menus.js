@@ -7,13 +7,10 @@ class Menus {
 	
 	menus = [{
 		name: '开发指南',
-		children: [{
-			name: '介绍',
-			url: 'home'
-		}, {
-			name: '快速上手',
-			url: 'test'
-		}]
+		url: 'home'
+	}, {
+		name: '快速使用',
+		url: 'test'
 	}]
 	
 	setMenus () {
