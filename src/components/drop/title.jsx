@@ -8,7 +8,8 @@ export default class DropTitle extends Component {
 		ctrl.emit('monaDropCtrl', this.isOpen)
 	}
 	
-	ctrlContent () {
+	ctrlContent (e) {
+		e.preventDefault()
 		const { ctrl } = this.props
 		this.isOpen = !this.isOpen
 		ctrl.emit('monaDropCtrl', this.isOpen)

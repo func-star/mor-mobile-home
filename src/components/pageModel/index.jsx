@@ -1,32 +1,27 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
-import Code from 'components/code'
-import Drop from 'components/drop'
+import Scene from './scene'
+import Code from './code'
+import Api from './api'
 
-const DropTitle = Drop.title
-const DropContent = Drop.content
-
-export default class PageModel extends Component {
+export default class pageModel extends Component {
+	static scene = Scene
+	static code = Code
+	static api = Api
+	
 	render () {
 		const {
-			name,
 			className,
+			title,
 			desc,
 			children
 		} = this.props
 		return (
-			<Drop className={classNames('page-model', className)} isOpen={true}>
-				<DropTitle>
-					<div className="page-model-title">{name}</div>
-					<div className="page-model-desc flex-center-y">
-						<div className="flex-1">{desc}</div>
-						<div>关闭</div>
-					</div>
-				</DropTitle>
-				<DropContent className="page-model-wrap w-full flex-1">
-					<Code>{children}</Code>
-				</DropContent>
-			</Drop>
+			<div className={classNames('page-model', className)}>
+				<div className="page-model-title">{title}</div>
+				<div className="page-model-desc">{desc}</div>
+				{children}
+			</div>
 		)
 	}
 }

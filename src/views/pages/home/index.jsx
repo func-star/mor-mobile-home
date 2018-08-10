@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
-import PageModel from 'components/pageModel'
+import CodeModel from 'components/codeModel/index'
+import PageModel from 'components/pageModel/index'
+
+const Scene = PageModel.scene
+const Code = PageModel.code
+const Api = PageModel.api
 
 export default class Home extends Component {
 	render () {
@@ -7,7 +12,13 @@ export default class Home extends Component {
 			'    size: \'large\',\n' +
 			'  };'
 		return (
-			<PageModel name="a" desc="b" classsName="abc">{code}</PageModel>
+			<PageModel>
+				<Scene>Scene</Scene>
+				<Code>
+					<CodeModel name="a" desc="b" classsName="abc">{code}</CodeModel>
+				</Code>
+				<Api>api</Api>
+			</PageModel>
 		)
 	}
 }

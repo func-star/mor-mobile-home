@@ -16,7 +16,7 @@ export default class Code extends Component {
 		} = this.props
 		const customSty = {
 			color: '#000',
-			lineHeight: 2,
+			lineHeight: 1.8,
 			fontSize: '14px',
 			background: '#fff',
 			fontFamily: '"Lucida Console", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace'
