@@ -10,7 +10,24 @@ class Menus {
 		url: 'home'
 	}, {
 		name: '快速使用',
-		url: 'test'
+		url: 'component/test'
+	}]
+	
+	menusLast = [{
+		name: 'react 系列产品',
+		children: [{
+			name: 'moreact-router',
+			name2: '单页面路由管理',
+			url: 'test'
+		}, {
+			name: 'mona-event',
+			name2: '事件管理',
+			url: 'test'
+		}, {
+			name: 'mona-redux',
+			name2: '全局状态管理',
+			url: 'test'
+		}]
 	}]
 	
 	setMenus () {
@@ -30,9 +47,11 @@ class Menus {
 				children
 			})
 		})
+		this.menus = this.menus.concat(this.menusLast)
 	}
 	
 	getMenus () {
+		console.log(this.menus)
 		return this.menus
 	}
 }

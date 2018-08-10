@@ -15,7 +15,7 @@ export default {
 		{
 			layout: DefaultLayout,
 			routes: {
-				'test': NoMatch,
+				'component/test': NoMatch,
 			},
 		},
 	],

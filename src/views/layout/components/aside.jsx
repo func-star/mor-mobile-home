@@ -76,7 +76,7 @@ export default class Aside extends Component {
 								</DropContent>
 							</Drop>
 							<Else />
-							<If condition={this.isHttpUrl(item.url)}>
+							<If condition={item.url && this.isHttpUrl(item.url)}>
 								<a className="menu-child flex-center-y no-child" href={item.url} key={'item' + index}>
 									<span>{item.name}</span>
 								</a>
