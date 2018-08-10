@@ -12,7 +12,7 @@ Object.assign(config.output, {
 	filename: './[name].[chunkhash].js',
 	chunkFilename: './[id].[chunkhash].js',
 	publicPath: '',
-	path: path.resolve(__dirname, '../assets'),
+	path: path.resolve(__dirname, '../assets')
 })
 
 config.module.rules = config.module.rules.concat([
@@ -22,53 +22,71 @@ config.module.rules = config.module.rules.concat([
 			use: [
 				'css-loader',
 				'postcss-loader',
-				'less-loader'],
-		}),
+				'less-loader']
+		})
 	},
 	{
 		test: /\.(js|jsx)$/,
 		use: ['babel-loader'],
-		exclude: /node_modules/,
-	},
+		exclude: /node_modules/
+	}
 ])
 
 config.plugins = (config.plugins || []).concat([
 	new webpack.DefinePlugin({
 		DEBUG: false,
 		'process.env': {
-			NODE_ENV: '"production"',
-		},
+			NODE_ENV: '"production"'
+		}
 	}),
 	new UglifyJSPlugin({
 		compress: {
-			warnings: false,
-		},
+			warnings: false
+		}
 	}),
 	//想看包文件的情况，可以打开
 	//new BundleAnalyzerPlugin(),
 	new ExtractTextPlugin('./[name].[chunkhash].css'),
-	new CopyWebpackPlugin([{
-		from: 'src/static',
-	}]),
+	// new CopyWebpackPlugin([{
+	// 	from: 'src/static'
+	// }]),
 	
 	new HtmlWebpackPlugin({
 		filename: '../assets/index.html',
-		template: 'src/index.html',
-	}),
+		template: 'src/index.html'
+	})
 ])
 
 fs.remove(path.resolve(__dirname, '../assets'))
 console.log('文件夹assets已删除')
-fs.remove(path.resolve(__dirname, '../docs'));
-console.log('文件夹docs已删除');
+fs.remove(path.resolve(__dirname, '../index.html'))
+console.log('index.html已删除')
+// fs.remove(path.resolve(__dirname, '../docs'));
+// console.log('文件夹docs已删除');
 
 console.log('正在打包')
 var compiler = webpack(config, (err, stats) => {
 	console.log(err)
 	console.log('打包成功')
 	console.log('[webpack]', stats.toString({}))
-	fs.copy(path.resolve(__dirname, '../assets'), path.resolve(__dirname, '../docs'), function () {
-		console.log('已复制assets到docs');
-	});
+	// fs.copy(path.resolve(__dirname, '../assets'), path.resolve(__dirname, '../docs'), function () {
+	// 	console.log('已复制assets到docs');
+	// });
+	updateHtml()
 })
+
+function updateHtml () {
+	let filePathFrom = path.join(__dirname, '../assets/index.html')
+	let filePathTo = path.join(__dirname, '../index.html')
+	fs.readFile(filePathFrom, (err, data) => {
+		if (err) throw err
+		let html = data.toString()
+		html = html.replace('src="./app.', 'src="./assets/app.')
+		html = html.replace('href="./app.', 'href="./assets/app.')
+		fs.writeFile(filePathTo, html, (err) => {
+			if (err) throw err
+			console.log('index.html生成成功！')
+		})
+	})
+}
 

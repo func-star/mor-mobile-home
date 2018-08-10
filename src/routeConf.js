@@ -4,7 +4,7 @@ import Home from 'pages/home';
 
 export default {
 	index: 'home',
-	// history: 'browserHistory',
+	history: 'browserHistory',
 	routeList: [
 		{
 			layout: DefaultLayout,
