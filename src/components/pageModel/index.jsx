@@ -15,7 +15,7 @@ export default class PageModel extends Component {
 			children
 		} = this.props
 		return (
-			<Drop className={classNames('page-model', className)}>
+			<Drop className={classNames('page-model', className)} isOpen={true}>
 				<DropTitle>
 					<div className="page-model-title">{name}</div>
 					<div className="page-model-desc flex-center-y">
