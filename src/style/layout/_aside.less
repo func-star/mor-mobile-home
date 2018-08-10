@@ -8,7 +8,9 @@
 	.menu-group {
 		.menu-item {
 			height: 45px;
-			color: @primary-color;
+			color: #000;
+			font-size: 16px;
+			padding-left: 10px;
 			&.no-child {
 				color: #2f343a;
 				transition: all 0.2s ease-in-out;
@@ -20,10 +22,10 @@
 		.menu-child {
 			height: 55px;
 			color: #2f343a;
-			padding: 0 20px;
+			padding: 0 20px 0 30px;
 			transition: all 0.2s ease-in-out;
 			&:hover {
-				background-color: #f3f3f3;
+				color: @primary-color;
 			}
 			.name1 {
 				font-size: 12px;
@@ -34,6 +36,7 @@
 		.menu-item, .menu-child {
 			&.active {
 				color: #39f;
+				background: #e6f7ff;
 				border-right: 2px solid #39f;
 			}
 		}

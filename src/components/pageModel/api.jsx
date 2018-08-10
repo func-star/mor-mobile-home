@@ -10,6 +10,7 @@ export default class Api extends Component {
 		} = this.props
 		return (
 			<div className={classNames('page-model-api', className)}>
+				<h2 className="page-model-title-2">代码演示</h2>
 				{children}
 			</div>
 		)
