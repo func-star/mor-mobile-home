@@ -6,17 +6,22 @@ import menusData from 'data/menus'
 import classNames from 'classnames'
 
 export default class iframe extends Component {
-	componentWillMount () {
-	
-	}
-	
 	render () {
+		const {
+			className,
+			url,
+			...props
+		} = this.props
+		let iframeUrl = 'h5/v0.1.x#' + url
+		if (window.location.port) {
+			iframeUrl = 'static/' + iframeUrl
+		}
 		return (
-			<div className="page-iframe h-full o-a">
+			<div className={classNames('page-iframe h-full o-a', className)} {...props}>
 				<div className="pape-iframe-content">
 					<div className="page-iframe-header"></div>
 					<div className="page-iframe-wrap w-full">
-						<iframe src="http://mor.monajs.cn/docs" frameBorder="0" className="full"></iframe>
+						<iframe src={iframeUrl} frameBorder="0" className="full"></iframe>
 					</div>
 				</div>
 			</div>

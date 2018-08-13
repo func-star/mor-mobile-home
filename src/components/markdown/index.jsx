@@ -6,11 +6,11 @@ export default class Markdown extends Component {
 	render () {
 		const {
 			className,
-			source
+			children
 		} = this.props
 		return (
 			<section className={classNames('component-markdown', className)}>
-				<ReactMarkdown source={source} />
+				<ReactMarkdown source={children} />
 			</section>
 		)
 	}

@@ -3,7 +3,9 @@
  */
 import React, { Component } from 'react'
 import valuesData from 'data/values'
-import Link from 'components/router/link'
+import Router from 'moreact-router'
+
+const Link = Router.link
 
 export default class Nav extends Component {
 	componentDidMount () {}

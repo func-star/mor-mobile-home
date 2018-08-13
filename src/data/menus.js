@@ -18,7 +18,7 @@ class Menus {
 		children: [{
 			name: 'moreact-router',
 			name2: '单页面路由管理',
-			url: 'test'
+			url: 'react/router'
 		}, {
 			name: 'mona-event',
 			name2: '事件管理',
@@ -51,7 +51,6 @@ class Menus {
 	}
 	
 	getMenus () {
-		console.log(this.menus)
 		return this.menus
 	}
 }

@@ -278,7 +278,6 @@ input[type="number"] {
 }
 .component-code {
   padding: 5px;
-  background: red;
 }
 .code-model {
   border: 1px solid #ebedf0;
@@ -298,7 +297,7 @@ input[type="number"] {
   font-size: 13px;
 }
 .page-model .page-model-title {
-  color: #0d1a26;
+  color: rgba(51, 51, 51, .9);
   font-weight: 500;
   margin-bottom: 20px;
   margin-top: 8px;
@@ -309,13 +308,26 @@ input[type="number"] {
   line-height: 38px;
 }
 .page-model .page-model-title-2 {
-  color: #0d1a26;
+  color: rgba(51, 51, 51, .9);
   -webkit-font-feature-settings: "tnum";
           font-feature-settings: "tnum";
   font-variant: tabular-nums;
-  margin: 30px 0 15px;
+  margin: 50px 0 15px;
   font-weight: 500;
   clear: both;
+}
+.page-model .page-model-title-3 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 20px 0 10px;
+  color: rgba(51, 51, 51, .9);
+}
+.page-model p {
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: #34495e;
 }
 .component-markdown {
   padding: 5px 0;
@@ -717,7 +729,7 @@ input[type="number"] {
   font-size: 16px;
 }
 .page-content {
-  padding: 0px 25px 20px;
+  padding: 0px 50px 20px;
 }
 .page-iframe {
   padding: 0px 15px 20px;
@@ -738,6 +750,10 @@ input[type="number"] {
 }
 .page-iframe .page-iframe-wrap {
   height: calc(100% - 70px);
+}
+.page-iframe-hide {
+  visibility: hidden;
+  width: 0;
 }
 #appWrapper {
   height: 100%;

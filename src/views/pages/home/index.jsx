@@ -3,7 +3,6 @@ import CodeModel from 'components/codeModel/index'
 import Markdown from 'components/markdown/index'
 import PageModel from 'components/pageModel/index'
 
-const Scene = PageModel.scene
 const Code = PageModel.code
 const Api = PageModel.api
 

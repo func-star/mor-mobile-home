@@ -2,12 +2,12 @@
  * created by yangxi 2018/1/8
  */
 import React, { Component } from 'react'
-import Link from 'components/router/link'
 import Menus from 'data/menus'
 import classNames from 'classnames'
 import Drop from 'components/drop'
-import Util from 'core/util'
-import Route from 'components/router/route'
+import Router from 'moreact-router'
+
+const Link = Router.link
 
 const DropTitle = Drop.title
 const DropContent = Drop.content
