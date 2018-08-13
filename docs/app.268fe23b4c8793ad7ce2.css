@@ -731,6 +731,9 @@ input[type="number"] {
 .page-content {
   padding: 0px 50px 20px;
 }
+.page-content::-webkit-scrollbar {
+  display: none;
+}
 .page-iframe {
   padding: 0px 15px 20px;
 }
