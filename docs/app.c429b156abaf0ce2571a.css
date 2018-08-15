@@ -323,14 +323,53 @@ input[type="number"] {
   margin: 20px 0 10px;
   color: rgba(51, 51, 51, .9);
 }
-.page-model p {
+.page-model .page-model-desc {
   margin: 15px 0;
   font-size: 14px;
   line-height: 26px;
-  color: #34495e;
+  color: #919294;
+}
+.page-model code {
+  font-size: 13px;
+  font-family: inherit;
+  word-break: keep-all;
+  margin: 2px;
+  padding: 2px 7px;
+  display: inline;
+  background-color: #f5f7fa;
+  color: rgba(51, 51, 51, .7);
+  border-radius: 3px;
 }
 .component-markdown {
   padding: 5px 0;
+  color: #919294;
+}
+.component-table {
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 45px;
+  border-collapse: collapse;
+  color: #34495e;
+}
+.component-table thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.component-table th {
+  padding: 8px 10px;
+  text-align: left;
+  font-weight: 400;
+  background-color: #f5f7fa;
+  border: 1px solid #eaeefb;
+}
+.component-table th:first-child {
+  padding-left: 10px;
+}
+.component-table td {
+  padding: 8px;
+  border: 1px solid #eaeefb;
 }
 .clearfix {
   zoom: 1;

@@ -2,3 +2,31 @@
 @import "module/_codeModel.less";
 @import "module/_pageModel.less";
 @import "module/_markdown.less";
+
+.component-table {
+	width: 100%;
+	font-size: 13px;
+	line-height: 1.5;
+	margin-bottom: 45px;
+	border-collapse: collapse;
+	color: #34495e;
+	thead {
+		display: table-header-group;
+		vertical-align: middle;
+		border-color: inherit;
+	}
+	th {
+		padding: 8px 10px;
+		text-align: left;
+		font-weight: 400;
+		background-color: #f5f7fa;
+		border: 1px solid #eaeefb;
+		&:first-child {
+			padding-left: 10px;
+		}
+	}
+	td {
+		padding: 8px;
+		border: 1px solid #eaeefb;
+	}
+}
