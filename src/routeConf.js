@@ -17,7 +17,7 @@ const routeList = {
 	}]
 }
 
-const componentList = ['layout', 'toast']
+const componentList = ['layout', 'toast', 'modal', 'list-view', 'loading', 'tabs', 'swiper', 'popup', 'date-picker', 'date-picker-range', 'modal-select', 'picker-select']
 
 componentList.forEach(v => {
 	let routes = {}

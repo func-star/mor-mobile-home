@@ -5,6 +5,9 @@ import Readme from 'readme/readme'
 export default class Layout extends Component {
 	componentWillMount () {
 		this.readme = Readme[Router.current.path]
+		Router.addEventListener('onChange', info => {
+			this.readme = Readme[info.path]
+		})
 	}
 	
 	render () {

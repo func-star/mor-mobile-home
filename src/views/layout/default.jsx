@@ -14,8 +14,12 @@ export default class DefaultLayout extends Component {
 		this.showIframe = this.routeInfo.path.indexOf('component/') !== 0
 		Router.addEventListener('onChange', res => {
 			this.routeInfo = res
+			this.wrap.scrollTop = 0
 			this.showIframe = this.routeInfo.path.indexOf('component/') !== 0
 		})
+	}
+	componentDidMount () {
+		this.wrap = this.refs.wrap
 	}
 	
 	isAside = true
@@ -29,7 +33,7 @@ export default class DefaultLayout extends Component {
 					<If condition={this.isAside}>
 						<Aside />
 					</If>
-					<div className="page-content flex-1 h-full o-a">
+					<div className="page-content flex-1 h-full o-a" ref="wrap">
 						{this.props.children}
 					</div>
 					<Iframe url={iFrameUrl} className={classNames({ 'page-iframe-hide': this.showIframe })} />

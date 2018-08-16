@@ -9,10 +9,10 @@ import {Row, Col} from 'mona'
 
 ## 代码演示
 
-### 基础用法
+### • 基础用法
 Layout 组件提供了`24列栅格`，通过在`Col`上添加`span`属性设置列所占的宽度百分比
 
-```
+```jsx
 <Row>
 	<Col span={12}>span: 12</Col>
 	<Col span={12}>span: 12</Col>
@@ -30,10 +30,10 @@ Layout 组件提供了`24列栅格`，通过在`Col`上添加`span`属性设置�
 </Row>
 ```
 
-### 每列元素之间增加间隙
+### • 每列元素之间增加间隙
 通过`gutter`属性可以设置列元素之间的间距，默认间距为 0
 
-```
+```jsx
 <Row gutter={10}>
 	<Col span={12}>
 		<div>gutter: 10px</div>
@@ -44,20 +44,20 @@ Layout 组件提供了`24列栅格`，通过在`Col`上添加`span`属性设置�
 </Row>
 ```
 
-### flex布局，水平垂直居中
+### • flex布局，水平垂直居中
 通过`align`和`justify`属性可以分别设置水平方向和垂直方向的 flex 布局方式，`Row`不一定要包裹`Col`
 
-```
+```jsx
 <Row align="center" justify="center">
 	<Col span={6}>span: 6</Col>
 	<Col span={6}>span: 6</Col>
 </Row>
 ```
 
-### flex布局，垂直布局
+### • flex布局，垂直布局
 通过`direction`属性可以选择是 flex 水平布局还是 flex 垂直布局
 
-```
+```jsx
 <Row gutter={10} direction="column" align="center" justify="center">
 	<Col span={6}>span: 6</Col>
 	<Col span={6}>span: 6</Col>
