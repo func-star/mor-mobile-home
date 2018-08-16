@@ -5,19 +5,16 @@ import ComponentView from 'pages/component'
 
 const routeList = {
 	index: 'home',
-	routeList: [
-		{
-			layout: DefaultLayout,
-			routes: {
-				'home': Home
-			}
-		},
-		{
-			routes: {
-				'404': NoMatch
-			}
+	routeList: [{
+		layout: DefaultLayout,
+		routes: {
+			'home': Home
 		}
-	]
+	}, {
+		routes: {
+			'404': NoMatch
+		}
+	}]
 }
 
 const componentList = ['layout', 'toast']
