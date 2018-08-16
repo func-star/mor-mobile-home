@@ -1,10 +1,9 @@
 import DefaultLayout from 'views/layout/default'
 import NoMatch from 'pages/noMatch'
 import Home from 'pages/home'
-import ReactRouter from 'pages/react/router'
-import ComponentLayout from 'pages/component/layout'
+import ComponentView from 'pages/component'
 
-export default {
+const routeList = {
 	index: 'home',
 	routeList: [
 		{
@@ -14,22 +13,22 @@ export default {
 			}
 		},
 		{
-			layout: DefaultLayout,
 			routes: {
-				'component/test': NoMatch
-			}
-		},
-		{
-			layout: DefaultLayout,
-			routes: {
-				'component/layout': ComponentLayout
-			}
-		},
-		{
-			layout: DefaultLayout,
-			routes: {
-				'react/router': ReactRouter
+				'404': NoMatch
 			}
 		}
 	]
 }
+
+const componentList = ['layout', 'toast']
+
+componentList.forEach(v => {
+	let routes = {}
+	routes['component/' + v] = ComponentView
+	routeList.routeList.push({
+		layout: DefaultLayout,
+		routes
+	})
+})
+
+export default routeList
