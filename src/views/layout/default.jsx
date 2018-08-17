@@ -16,8 +16,10 @@ export default class DefaultLayout extends Component {
 			this.routeInfo = res
 			this.wrap.scrollTop = 0
 			this.showIframe = this.routeInfo.path.indexOf('component/') !== 0
+			this.setState({})
 		})
 	}
+	
 	componentDidMount () {
 		this.wrap = this.refs.wrap
 	}

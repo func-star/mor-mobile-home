@@ -22,9 +22,9 @@ export default class Test extends Component {
 	render () {
 		return (
 			<Swiper afterChange={this.afterChange.bind(this)}>
-				<SwiperItem style={{ background: 'red' }}>第一面板</SwiperItem>
-				<SwiperItem style={{ background: 'blue' }}>第二面板</SwiperItem>
-				<SwiperItem style={{ background: 'green' }}>第三面板</SwiperItem>
+				<SwiperItem style={{ background: '#8bc34a' }}>第一面板</SwiperItem>
+				<SwiperItem style={{ background: '#03a9f4' }}>第二面板</SwiperItem>
+				<SwiperItem style={{ background: '#ff9800' }}>第三面板</SwiperItem>
 			</Swiper>
 		)
 	}
@@ -37,9 +37,9 @@ export default class Test extends Component {
 
 ```jsx
 <Swiper loop={true}>
-	<SwiperItem style={{ background: 'red' }}>第一面板</SwiperItem>
-	<SwiperItem style={{ background: 'blue' }}>第二面板</SwiperItem>
-	<SwiperItem style={{ background: 'green' }}>第三面板</SwiperItem>
+	<SwiperItem style={{ background: '#8bc34a' }}>第一面板</SwiperItem>
+	<SwiperItem style={{ background: '#03a9f4' }}>第二面板</SwiperItem>
+	<SwiperItem style={{ background: '#ff9800' }}>第三面板</SwiperItem>
 </Swiper>
 
 ```
@@ -52,13 +52,13 @@ export default class Test extends Component {
 ```jsx
 <Swiper loop={true} childWidth={260}>
 	<SwiperItem style={{ padding: '0 10px' }}>
-		<div className="flex-center full" style={{ background: 'red' }}>第一面板</div>
+		<div style={{ background: '#8bc34a' }}>第一面板</div>
 	</SwiperItem>
 	<SwiperItem style={{ padding: '0 10px' }}>
-		<div className="flex-center full" style={{ background: 'blue' }}>第二面板</div>
+		<div style={{ background: '#03a9f4' }}>第二面板</div>
 	</SwiperItem>
 	<SwiperItem style={{ padding: '0 10px' }}>
-		<div className="flex-center full" style={{ background: 'green' }}>第三面板</div>
+		<div style={{ background: '#ff9800' }}>第三面板</div>
 	</SwiperItem>
 </Swiper>
 ```
@@ -69,9 +69,9 @@ export default class Test extends Component {
 
 ```jsx
 <Swiper dots={false}>
-	<SwiperItem style={{ background: 'red' }}>第一面板</SwiperItem>
-	<SwiperItem style={{ background: 'blue' }}>第二面板</SwiperItem>
-	<SwiperItem style={{ background: 'green' }}>第三面板</SwiperItem>
+	<SwiperItem style={{ background: '#8bc34a' }}>第一面板</SwiperItem>
+	<SwiperItem style={{ background: '#03a9f4' }}>第二面板</SwiperItem>
+	<SwiperItem style={{ background: '#ff9800' }}>第三面板</SwiperItem>
 </Swiper>
 ```
 

@@ -12,7 +12,6 @@ class Components {
 				modal: { name: 'Modal - 弹框', url: 'modal', desc: '支持自定义弹框以及dialog' },
 				listView: { name: 'ListView - 瀑布流容器', url: 'list-view', desc: '支持瀑布流以及下拉刷新' },
 				tabs: { name: 'Tabs - 切换面板', url: 'tabs', desc: '支持手势滑动切换' },
-				loading: { name: 'Loading - 加载', url: 'loading', desc: '加载中' },
 				swiper: { name: 'Swiper - 轮播组件', url: 'swiper', desc: '走马灯，支持自定义wrap' },
 				loading: { name: 'Loading - 加载', url: 'loading', desc: '加载中' },
 				popup: { name: 'popup - 弹层', url: 'popup', desc: '弹层' },
@@ -26,8 +25,7 @@ class Components {
 			name: '其他',
 			map: {
 				hammer: { name: 'Hammer - 手势库', url: 'hammer', desc: '迷你手势库' },
-				pickerView: { name: 'PickerView - 滚动面板', url: 'picker-view' },
-				events: { name: 'Events - 事件类', url: 'events', desc: '监听者模式' }
+				pickerView: { name: 'PickerView - 滚动面板', url: 'picker-view' }
 			}
 		}
 	}

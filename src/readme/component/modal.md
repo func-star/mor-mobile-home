@@ -1,4 +1,4 @@
-# modal
+# Modal
 
 ✨✨支持`dialog`功能
 
@@ -144,8 +144,8 @@ Modal.confirm({
 | enableCancel | 是否展示取消按钮 | `Boolean` | `true` | - |
 | isHaveMask | 是否显示背景蒙层 | `Boolean` | `true` | - |
 | maskClosable | 是否允许背景点击关闭 | `Boolean` | `true` | - |
-| onConfirm | 点击确认之后的回调 | `Function` | null | - |
-| onCancel | 点击取消之后的回调 | `Function` | null | - |
+| onConfirm | 点击确认之后的回调 | `Function` | - | - |
+| onCancel | 点击取消之后的回调 | `Function` | - | - |
 | footer | 是否需要底部bar | `Boolean` | `true` | - |
 | title | 头部展示视图或者文案 | `String` `Node` | - | - |
 | children | 内容区域视图 | `String` `Node` | - | - |

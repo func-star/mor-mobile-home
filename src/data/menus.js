@@ -20,12 +20,12 @@ class Menus {
 			name2: '单页面路由管理',
 			url: 'react/router'
 		}, {
-			name: 'mona-event',
-			name2: '事件管理',
-			url: 'test'
-		}, {
 			name: 'mona-redux',
 			name2: '全局状态管理',
+			url: 'test'
+		}, {
+			name: 'mona-event',
+			name2: '事件管理',
 			url: 'test'
 		}]
 	}]

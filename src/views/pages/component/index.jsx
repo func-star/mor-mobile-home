@@ -7,6 +7,7 @@ export default class Layout extends Component {
 		this.readme = Readme[Router.current.path]
 		Router.addEventListener('onChange', info => {
 			this.readme = Readme[info.path]
+			this.setState({})
 		})
 	}
 	

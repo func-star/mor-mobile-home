@@ -27,10 +27,10 @@ export default class Test extends Component {
 
 	render () {
 		return (
-			<Tabs style={{ height: 200 }} tabs={this.tabs} afterChange={this.afterChange.bind(this)} className="tabs-pannel">
-				<TabItem className="flex-center">第一面板</TabItem>
-				<TabItem className="flex-center">第二面板</TabItem>
-				<TabItem className="flex-center">第三面板</TabItem>
+			<Tabs style={{ height: 200 }} tabs={this.tabs} afterChange={this.afterChange.bind(this)}>
+				<TabItem>第一面板</TabItem>
+				<TabItem>第二面板</TabItem>
+				<TabItem>第三面板</TabItem>
 			</Tabs>
 		)
 	}
@@ -49,16 +49,15 @@ export default class Test extends Component {
 
 	render () {
 		return (
-			<Tabs style={{ height: 200 }} ref="tabs" defaultIndex={1} tabs={this.tabs} afterChange={this.afterChange.bind(this)} className="tabs-pannel">
-            	<TabItem className="flex-center">
-            		<DemoButton onClick={this.tab.bind(this, 1)}>切换wrap to 1</DemoButton>
+			<Tabs style={{ height: 200 }} ref="tabs" defaultIndex={1} tabs={this.tabs} afterChange={this.afterChange.bind(this)}>
+            	<TabItem>
+            		<button onClick={this.tab.bind(this, 1)}>切换wrap to 1</button>
             	</TabItem>
-            	<TabItem className="flex-center">
-            		<DemoButton onClick={this.tab.bind(this, 0)}>切换wrap to 0</DemoButton>
-
+            	<TabItem>
+            		<button onClick={this.tab.bind(this, 0)}>切换wrap to 0</button>
             	</TabItem>
-            	<TabItem className="flex-center">
-            		<DemoButton onClick={this.tab.bind(this, 0)}>切换wrap to 0</DemoButton>
+            	<TabItem>
+            		<button onClick={this.tab.bind(this, 0)}>切换wrap to 0</button>
             	</TabItem>
             </Tabs>
 		)
@@ -72,10 +71,10 @@ export default class Test extends Component {
 通过`enableTouch`属性可以达到禁用手势的目的
 
 ```jsx
-<Tabs style={{ height: 200 }} enableTouch={false} tabs={this.tabs} afterChange={this.afterChange.bind(this)} className="tabs-pannel">
-	<TabItem className="flex-center">第一面板</TabItem>
-	<TabItem className="flex-center">第二面板</TabItem>
-	<TabItem className="flex-center">第三面板</TabItem>
+<Tabs style={{ height: 200 }} enableTouch={false} tabs={this.tabs} afterChange={this.afterChange.bind(this)}>
+	<TabItem>第一面板</TabItem>
+	<TabItem>第二面板</TabItem>
+	<TabItem>第三面板</TabItem>
 </Tabs>
 ```
 
@@ -84,10 +83,10 @@ export default class Test extends Component {
 通过`enableDamp`属性可以达到禁用弹性阻尼的目的
 
 ```jsx
-<Tabs style={{ height: 200 }} enableDamp={false} tabs={this.tabs} afterChange={this.afterChange.bind(this)} className="tabs-pannel">
-	<TabItem className="flex-center">第一面板</TabItem>
-	<TabItem className="flex-center">第二面板</TabItem>
-	<TabItem className="flex-center">第三面板</TabItem>
+<Tabs style={{ height: 200 }} enableDamp={false} tabs={this.tabs} afterChange={this.afterChange.bind(this)}>
+	<TabItem>第一面板</TabItem>
+	<TabItem>第二面板</TabItem>
+	<TabItem>第三面板</TabItem>
 </Tabs>
 ```
 
@@ -96,10 +95,10 @@ export default class Test extends Component {
 通过设置`tabs`属性为`false`来隐藏默认头部，根据`afterChange`返回的位置信息来自定义头部导航
 
 ```jsx
-<Tabs style={{ height: 200 }} tabs={false} afterChange={this.afterChange.bind(this)} className="tabs-pannel">
-	<TabItem className="flex-center">第一面板</TabItem>
-	<TabItem className="flex-center">第二面板</TabItem>
-	<TabItem className="flex-center">第三面板</TabItem>
+<Tabs style={{ height: 200 }} tabs={false} afterChange={this.afterChange.bind(this)}>
+	<TabItem>第一面板</TabItem>
+	<TabItem>第二面板</TabItem>
+	<TabItem>第三面板</TabItem>
 </Tabs>
 ```
 
@@ -114,7 +113,7 @@ export default class Test extends Component {
 | enableDamp | 是否允许弹性阻尼效果 | `Boolean` | true | - |
 | enableTouch | 是否允许手势左右滑动切换视图 | `Boolean` | true | - |
 | defaultIndex | 默认定位在第几个视图 | `Number` | 0 | - |
-| tabs | 头部切换栏，不传则隐藏 | `Array` | null | - |
+| tabs | 头部切换栏，不传则隐藏 | `Array` | - | - |
 | className | className属性 | `String` | - | - |
 
 ### TabsItem
