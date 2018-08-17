@@ -1,5 +1,7 @@
 # ListView
 
+✨✨支持下拉触发和上滑触底触发
+
 ## 使用指南
 ```jsx
 import { ListView } from 'mona'
@@ -83,4 +85,4 @@ export default class Test extends Component {
 | offset | 下拉多少距离触发下拉刷新回调 | `Number` | 50 | - |
 | onRefresh (done)| 拉刷新触发钩子函数，done函数是通知回调 | `Function` | - | - |
 | isEnd| 是否已经加载完毕，不再触发下滑事件 | `Boolean` | `false` | - |
-| children | 内容区域视图 | `String` `Dom` | - | - |
+| children | 内容区域视图 | `String` `Node` | - | - |

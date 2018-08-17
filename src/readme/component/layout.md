@@ -1,9 +1,9 @@
 # Layout && Flex 布局
 
-提供了`Row`和`Col`两个组件来进行行列布局
+✨✨提供了`Row`和`Col`两个组件来进行行列布局
 
 ## 使用指南
-```
+```jsx
 import {Row, Col} from 'mona'
 ```
 
