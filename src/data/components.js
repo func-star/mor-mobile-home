@@ -12,6 +12,7 @@ class Components {
 				modal: { name: 'Modal - 弹框', url: 'modal', desc: '支持自定义弹框以及dialog' },
 				listView: { name: 'ListView - 瀑布流容器', url: 'list-view', desc: '支持瀑布流以及下拉刷新' },
 				tabs: { name: 'Tabs - 切换面板', url: 'tabs', desc: '支持手势滑动切换' },
+				loading: { name: 'Loading - 加载', url: 'loading', desc: '加载中' },
 				swiper: { name: 'Swiper - 轮播组件', url: 'swiper', desc: '走马灯，支持自定义wrap' },
 				loading: { name: 'Loading - 加载', url: 'loading', desc: '加载中' },
 				popup: { name: 'popup - 弹层', url: 'popup', desc: '弹层' },

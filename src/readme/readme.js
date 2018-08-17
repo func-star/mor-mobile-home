@@ -13,5 +13,5 @@ export default {
 	'component/list-view': listViewMd,
 	'component/loading': loadingMd,
 	'component/tabs': tabsMd,
-	'component/swiper': swiperMd,
+	'component/swiper': swiperMd
 }

@@ -150,4 +150,3 @@ Modal.confirm({
 | title | 头部展示视图或者文案 | `String` `Node` | - | - |
 | children | 内容区域视图 | `String` `Node` | - | - |
 | className | className属性，尽在节点插入形式场景下支持 | `String` | - | - |
-
