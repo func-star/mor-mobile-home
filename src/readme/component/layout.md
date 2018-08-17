@@ -1,9 +1,9 @@
 # Layout && Flex 布局
 
-提供了`Row`和`Col`两个组件来进行行列布局
+✨✨提供了`Row`和`Col`两个组件来进行行列布局
 
 ## 使用指南
-```
+```jsx
 import {Row, Col} from 'mona'
 ```
 
@@ -74,6 +74,8 @@ Layout 组件提供了`24列栅格`，通过在`Col`上添加`span`属性设置�
 | justify | 水平布局类型 justify-content: * | `String` | - | `start|center|end|space-between|space-around` |
 | align | 垂直布局类型，匹配 align-items: * | `String` | - | `flex-start|flex-end|center|baseline|stretch` |
 | direction | 水平布局或者垂直布局，匹配 flex-direction: * | `String` | - | `column|row` |
+| className | className属性 | `String` | - | - |
+| children | 内容区域视图 | `String` `Node` | - | - |
 
 
 ### Col
@@ -81,3 +83,5 @@ Layout 组件提供了`24列栅格`，通过在`Col`上添加`span`属性设置�
 | 参数 | 说明 | 类型 | 默认值 | 可选项 |
 | --- | --- | --- | --- | :-- |
 | span | 单元格宽度 | `Number|String` | - | - |
+| className | className属性 | `String` | - | - |
+| children | 内容区域视图 | `String` `Node` | - | - |
