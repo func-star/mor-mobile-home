@@ -1,13 +1,28 @@
 {
 	"name": "mor-mobile-home",
 	"version": "0.0.1",
-	"author": "yangxi",
 	"description": "Mor - 让你感到幸福的 React 组件库",
+	"main": "index.js",
 	"scripts": {
 		"start": "node ./build/webpack.dev.js",
 		"build": "export NODE_ENV=prodution && node ./build/webpack.build.js",
 		"config": "babel buildSrc --out-dir build"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/func-star/mor-mobile-home.git"
+	},
+	"keywords": [
+		"monajs",
+		"mona",
+		"mor-mobile"
+	],
+	"author": "yangxi",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/func-star/mor-mobile-home/issues"
+	},
+	"homepage": "https://github.com/func-star/mor-mobile-home#readme",
 	"devDependencies": {
 		"babel-core": "^6.26.0",
 		"babel-loader": "^7.1.2",

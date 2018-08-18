@@ -31,7 +31,7 @@ npm i babel-plugin-import -dev
 }
 ```
 
-✨✨接着你可以在代码中直接引入 Vant 组件
+✨✨接着你可以在代码中直接引入 Mor-mobile 组件
 
 ```
 import { Row, Col } from 'mor-mobile';
