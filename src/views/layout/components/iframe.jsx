@@ -9,19 +9,19 @@ export default class iframe extends Component {
 	render () {
 		const {
 			className,
-			url,
 			...props
 		} = this.props
-		let iframeUrl = 'h5/v0.1.x#' + url
+		let iframeUrl = 'h5/v0.1.x#'
 		if (window.location.port) {
 			iframeUrl = 'static/' + iframeUrl
 		}
+		// let iframeUrl = 'http://mona.com:7000/'
 		return (
-			<div className={classNames('page-iframe h-full o-a', className)} {...props}>
+			<div className={classNames('page-iframe h-full o-a', className)}>
 				<div className="pape-iframe-content">
 					<div className="page-iframe-header"></div>
 					<div className="page-iframe-wrap w-full">
-						<iframe src={iframeUrl} frameBorder="0" className="full"></iframe>
+						<iframe src={iframeUrl} frameBorder="0" className="full" {...props}></iframe>
 					</div>
 				</div>
 			</div>

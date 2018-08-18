@@ -4,7 +4,7 @@ import Util from 'core/util';
 export default class NoMatch extends Component {
 	render () {
 		return (
-			<div>321</div>
+			<div>fdsfds</div>
 		);
 	}
 }
