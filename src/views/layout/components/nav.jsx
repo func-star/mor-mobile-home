@@ -21,7 +21,11 @@ export default class Nav extends Component {
 							</div>
 						</Link>
 					</div>
-					<div className="page-nav-right flex-right-x flex-1 flex-center-y"></div>
+					<div className="page-nav-right flex-right-x flex-1 flex-center-y">
+						<a href="https://github.com/func-star/mor-mobile" target="_blank" className="github">
+							<i className="iconfont icon-github"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		)

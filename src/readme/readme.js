@@ -10,6 +10,9 @@ import datePickerMd from 'readme/component/date-picker.md'
 import datePickerRangeMd from 'readme/component/date-picker-range.md'
 import modalSelectMd from 'readme/component/modal-select.md'
 import pickerSelectMd from 'readme/component/picker-select.md'
+import hammerMd from 'readme/component/hammer.md'
+import pickerViewMd from 'readme/component/picker-view.md'
+import howTouseMd from 'readme/other/how-to-use.md'
 
 export default {
 	'component/layout': layoutMd,
@@ -23,5 +26,8 @@ export default {
 	'component/date-picker': datePickerMd,
 	'component/date-picker-range': datePickerRangeMd,
 	'component/modal-select': modalSelectMd,
-	'component/picker-select': pickerSelectMd
+	'component/picker-select': pickerSelectMd,
+	'component/hammer': hammerMd,
+	'component/picker-view': pickerViewMd,
+	'how-to-use': howTouseMd
 }

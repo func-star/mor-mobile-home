@@ -59,7 +59,7 @@ export default class Aside extends Component {
 								<DropContent className="menu-child-group">
 									<For each="child" of={item.children} index="childIdx">
 										<If condition={this.isHttpUrl(child.url)}>
-											<a className="menu-child flex-center-x flex-direction-col" href={child.url} key={'child' + childIdx}>
+											<a className="menu-child flex-center-x flex-direction-col" target="_blank" href={child.url} key={'child' + childIdx}>
 												<div className="name">{child.name}</div>
 												<div className="name1">{child.name2}</div>
 											</a>

@@ -9,11 +9,15 @@ import Iframe from './components/iframe'
 import Router from 'moreact-router'
 
 export default class DefaultLayout extends Component {
+	componentWillMount () {
+		this.showIframe = Router.current.path.indexOf('component/') !== 0
+	}
 	componentDidMount () {
 		this.wrap = this.refs.wrap
 		this.ctrlIframe(Router.current, false)
 		Router.addEventListener('onChange', res => {
 			this.wrap.scrollTop = 0
+			this.showIframe = Router.current.path.indexOf('component/') !== 0
 			this.ctrlIframe(res, true)
 			this.setState({})
 		})
@@ -28,12 +32,13 @@ export default class DefaultLayout extends Component {
 				monajsIframe.window.location.hash = '#' + this.routeInfo.path.replace('component/', '')
 			}
 		}
-		this.showIframe = this.routeInfo.path.indexOf('component/') !== 0
+		
 	}
 	
 	isAside = true
 	
 	render () {
+		console.log(this.showIframe)
 		return (
 			<div className="page-wrapper">
 				<Nav />
@@ -41,7 +46,7 @@ export default class DefaultLayout extends Component {
 					<If condition={this.isAside}>
 						<Aside />
 					</If>
-					<div className="page-content flex-1 h-full o-a" ref="wrap">
+					<div className="page-content flex-1 h-full o-a pos-r" ref="wrap">
 						{this.props.children}
 					</div>
 					<Iframe name="monajsIframe" className={classNames({ 'page-iframe-hide': this.showIframe })} />

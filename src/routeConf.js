@@ -4,11 +4,11 @@ import Home from 'pages/home'
 import ComponentView from 'pages/component'
 
 const routeList = {
-	index: 'home',
+	index: 'how-to-use',
 	routeList: [{
 		layout: DefaultLayout,
 		routes: {
-			'home': Home
+			'how-to-use': ComponentView
 		}
 	}, {
 		routes: {

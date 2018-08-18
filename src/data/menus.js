@@ -6,11 +6,8 @@ class Menus {
 	}
 	
 	menus = [{
-		name: '开发指南',
-		url: 'home'
-	}, {
 		name: '快速使用',
-		url: 'component/test'
+		url: 'how-to-use'
 	}]
 	
 	menusLast = [{
@@ -18,7 +15,7 @@ class Menus {
 		children: [{
 			name: 'moreact-router',
 			name2: '单页面路由管理',
-			url: 'react/router'
+			url: 'https://github.com/func-star/mo-react-router'
 		}, {
 			name: 'mona-redux',
 			name2: '全局状态管理',
@@ -26,7 +23,7 @@ class Menus {
 		}, {
 			name: 'mona-event',
 			name2: '事件管理',
-			url: 'test'
+			url: 'https://github.com/func-star/mona-events'
 		}]
 	}]
 	

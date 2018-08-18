@@ -1,7 +1,7 @@
 {
 	"name": "mor-mobile-home",
 	"version": "0.0.1",
-	"author": "杨玺",
+	"author": "yangxi",
 	"description": "Mor - 让你感到幸福的 React 组件库",
 	"scripts": {
 		"start": "node ./build/webpack.dev.js",
@@ -46,6 +46,7 @@
 		"markdown-it": "^8.4.2",
 		"moment": "^2.18.1",
 		"mona-events": "0.0.5",
+		"mor-mobile": "^0.1.0",
 		"moreact-router": "^0.3.1",
 		"querystring": "0.2.0",
 		"rc-queue-anim": "1.4.1",

@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import Util from 'core/util';
+import React, { Component } from 'react'
+import { Row, Col } from 'mor-mobile'
 
 export default class NoMatch extends Component {
 	render () {
 		return (
-			<div>fdsfds</div>
-		);
+			<Row>404</Row>
+		)
 	}
 }

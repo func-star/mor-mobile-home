@@ -5,6 +5,13 @@
 		"stage-0"
 	],
 	"plugins": [
+		[
+			"import",
+			{
+				"libraryName": "mor-mobile",
+				"libraryDirectory": "lib"
+			}
+		],
 		"jsx-control-statements",
 		"transform-object-assign"
 	]

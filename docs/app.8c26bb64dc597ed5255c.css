@@ -891,9 +891,11 @@ input[type="number"] {
   height: 30px;
   margin-right: 20px;
 }
-.page-nav-right {
+.page-nav-right .github {
   color: #231916;
-  font-size: 16px;
+}
+.page-nav-right .github .icon-github {
+  font-size: 28px;
 }
 .page-content {
   padding: 0px 50px 20px;
