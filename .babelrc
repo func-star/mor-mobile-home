@@ -8,8 +8,9 @@
 		[
 			"import",
 			{
-				"libraryName": "mor-mobile",
-				"libraryDirectory": "lib"
+				"libraryName": "antd",
+				"libraryDirectory": "lib",
+				"style": "css"
 			}
 		],
 		"jsx-control-statements",

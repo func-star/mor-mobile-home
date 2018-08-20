@@ -13,7 +13,7 @@ export default class Layout extends Component {
 	
 	render () {
 		return (
-			<div className="mor-mobile-markdown" dangerouslySetInnerHTML={{ __html: this.readme }}></div>
+			<div className="mona-mobile-markdown" dangerouslySetInnerHTML={{ __html: this.readme }}></div>
 		)
 	}
 }

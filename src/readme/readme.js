@@ -13,6 +13,7 @@ import pickerSelectMd from 'readme/component/picker-select.md'
 import hammerMd from 'readme/component/hammer.md'
 import pickerViewMd from 'readme/component/picker-view.md'
 import howTouseMd from 'readme/other/how-to-use.md'
+import customThemeMd from 'readme/other/custom-theme.md'
 
 export default {
 	'component/layout': layoutMd,
@@ -29,5 +30,7 @@ export default {
 	'component/picker-select': pickerSelectMd,
 	'component/hammer': hammerMd,
 	'component/picker-view': pickerViewMd,
-	'how-to-use': howTouseMd
+	'how-to-use': howTouseMd,
+	'custom-theme': customThemeMd,
+	
 }

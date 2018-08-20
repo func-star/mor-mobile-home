@@ -11,7 +11,7 @@ export default class iframe extends Component {
 			className,
 			...props
 		} = this.props
-		let iframeUrl = 'h5/v0.1.x#'
+		let iframeUrl = 'h5/v0.2.x#'
 		if (window.location.port) {
 			iframeUrl = 'static/' + iframeUrl
 		}

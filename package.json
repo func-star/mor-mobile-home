@@ -54,6 +54,7 @@
 		"webpack-dev-server": "^2.9.7"
 	},
 	"dependencies": {
+		"antd": "^3.8.2",
 		"axios": "^0.17.1",
 		"classnames": "2.2.5",
 		"es6-promise": "3.2.1",
@@ -61,7 +62,6 @@
 		"markdown-it": "^8.4.2",
 		"moment": "^2.18.1",
 		"mona-events": "0.0.5",
-		"mor-mobile": "^0.1.0",
 		"moreact-router": "^0.3.1",
 		"querystring": "0.2.0",
 		"rc-queue-anim": "1.4.1",

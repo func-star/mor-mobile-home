@@ -11,6 +11,11 @@ const routeList = {
 			'how-to-use': ComponentView
 		}
 	}, {
+		layout: DefaultLayout,
+		routes: {
+			'custom-theme': ComponentView
+		}
+	}, {
 		routes: {
 			'404': NoMatch
 		}

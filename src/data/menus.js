@@ -8,6 +8,9 @@ class Menus {
 	menus = [{
 		name: '快速使用',
 		url: 'how-to-use'
+	},{
+		name: '定制主题',
+		url: 'custom-theme'
 	}]
 	
 	menusLast = [{
