@@ -4,7 +4,6 @@
 import React, { Component } from 'react'
 import valuesData from 'data/values'
 import Router from 'moreact-router'
-import { Tooltip } from 'antd'
 
 const Link = Router.link
 
@@ -24,9 +23,7 @@ export default class Nav extends Component {
 					</div>
 					<div className="page-nav-right flex-right-x flex-1 flex-center-y">
 						<a href="https://github.com/func-star/mor-mobile" target="_blank" className="github">
-							<Tooltip title="项目地址">
-								<i className="iconfont icon-github"></i>
-							</Tooltip>
+							<i className="iconfont icon-github"></i>
 						</a>
 					</div>
 				</div>

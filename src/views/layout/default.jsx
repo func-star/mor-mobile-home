@@ -7,12 +7,12 @@ import Nav from './components/nav'
 import Aside from './components/aside'
 import Iframe from './components/iframe'
 import Router from 'moreact-router'
-import { Tooltip } from 'antd'
 
 export default class DefaultLayout extends Component {
 	componentWillMount () {
 		this.showIframe = Router.current.path.indexOf('component/') !== 0
 	}
+	
 	componentDidMount () {
 		this.wrap = this.refs.wrap
 		this.ctrlIframe(Router.current, false)
@@ -51,9 +51,7 @@ export default class DefaultLayout extends Component {
 					</div>
 					<Iframe name="monajsIframe" className={classNames({ 'page-iframe-hide': this.showIframe })} />
 					<a href="https://github.com/func-star/mor-mobile/issues" target="_blank" className="page-feedback pos-f">
-						<Tooltip title="立即反馈">
-							<i className="iconfont icon-feedback"></i>
-						</Tooltip>
+						<i className="iconfont icon-feedback"></i>
 					</a>
 				</div>
 			</div>

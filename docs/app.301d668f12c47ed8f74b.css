@@ -948,9 +948,9 @@ input[type="number"] {
 .page-feedback {
   bottom: 50px;
   right: 30px;
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="6" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(23,144,255,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
-  -webkit-filter: drop-shadow(0 0 6px #1790ff);
-          filter: drop-shadow(0 0 6px #1790ff);
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="6" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(23,144,255,0.4)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(0 0 6px rgba(23, 144, 255, .4));
+          filter: drop-shadow(0 0 6px rgba(23, 144, 255, .4));
 }
 .page-feedback .iconfont {
   font-size: 35px;
