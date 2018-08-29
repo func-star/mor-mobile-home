@@ -70,10 +70,10 @@ Layout 组件提供了`24列栅格`，通过在`Col`上添加`span`属性设置�
 
 | 参数 | 说明 | 类型 | 默认值 | 可选项 |
 | --- | --- | --- | --- | :-- |
-| gutter | 列元素之间的间距（单位为px） | `Number` | 0 | - |
-| justify | 水平布局类型 justify-content: * | `String` | - | `start|center|end|space-between|space-around` |
-| align | 垂直布局类型，匹配 align-items: * | `String` | - | `flex-start|flex-end|center|baseline|stretch` |
-| direction | 水平布局或者垂直布局，匹配 flex-direction: * | `String` | - | `column|row` |
+| gutter | 列元素之间的间距（单位为px） | `Number` | `0` | - |
+| justify | 水平布局类型 justify-content: * | `String` | - | `start` `center` `end` `space-between` `space-around` |
+| align | 垂直布局类型，匹配 align-items: * | `String` | - | `flex-start` `flex-end` `center` `baseline` `stretch` |
+| direction | 水平布局或者垂直布局，匹配 flex-direction: * | `String` | - | `column` `row` |
 | className | className属性 | `String` | - | - |
 | children | 内容区域视图 | `String` `Node` | - | - |
 
@@ -82,6 +82,6 @@ Layout 组件提供了`24列栅格`，通过在`Col`上添加`span`属性设置�
 
 | 参数 | 说明 | 类型 | 默认值 | 可选项 |
 | --- | --- | --- | --- | :-- |
-| span | 单元格宽度 | `Number|String` | - | - |
+| span | 单元格宽度 | `Number` `String` | - | - |
 | className | className属性 | `String` | - | - |
 | children | 内容区域视图 | `String` `Node` | - | - |

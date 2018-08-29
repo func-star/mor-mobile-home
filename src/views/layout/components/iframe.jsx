@@ -11,11 +11,10 @@ export default class iframe extends Component {
 			className,
 			...props
 		} = this.props
-		let iframeUrl = 'h5/v0.2.x#'
+		let iframeUrl = 'h5/v0.x.x#'
 		if (window.location.port) {
 			iframeUrl = 'static/' + iframeUrl
 		}
-		// let iframeUrl = 'http://mona.com:7000/'
 		return (
 			<div className={classNames('page-iframe h-full o-a', className)}>
 				<div className="pape-iframe-content">

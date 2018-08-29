@@ -8,7 +8,7 @@ class Menus {
 	menus = [{
 		name: '快速使用',
 		url: 'how-to-use'
-	},{
+	}, {
 		name: '定制主题',
 		url: 'custom-theme'
 	}]
@@ -20,9 +20,13 @@ class Menus {
 			name2: '单页面路由管理',
 			url: 'https://github.com/func-star/mo-react-router'
 		}, {
-			name: 'mona-redux',
-			name2: '全局状态管理',
-			url: 'test'
+			name: 'mona-scroll-watcher',
+			name2: '滚动监听',
+			url: 'https://func-star.github.io/mor-scroll-watcher/'
+		}, {
+			name: 'mor-lazyload-img',
+			name2: '图片懒加载',
+			url: 'https://func-star.github.io/mor-lazyload-img/'
 		}, {
 			name: 'mona-event',
 			name2: '事件管理',
