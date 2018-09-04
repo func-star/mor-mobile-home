@@ -838,6 +838,38 @@ input[type="number"] {
 .page-aside .menu-group .menu-item.no-child:hover {
   background-color: #f3f3f3;
 }
+.page-aside .menu-group .menu-item .tag-drop {
+  padding-right: 10px;
+}
+.page-aside .menu-group .menu-item .tag-drop .point-start,
+.page-aside .menu-group .menu-item .tag-drop .point-end {
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #000;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.page-aside .menu-group .menu-item .tag-drop .line {
+  width: 2px;
+  -webkit-transform: scaleX(0.6);
+          transform: scaleX(0.6);
+  height: 4px;
+  background-color: #000;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.page-aside .menu-group .menu-item .tag-drop.open .line {
+  height: 0;
+}
+.page-aside .menu-group .menu-item .tag-drop.open .point-start {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+.page-aside .menu-group .menu-item .tag-drop.open .point-end {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
 .page-aside .menu-group .menu-item .iconfont {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);

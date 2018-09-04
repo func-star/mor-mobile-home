@@ -17,6 +17,34 @@
 					background-color: #f3f3f3;
 				}
 			}
+			.tag-drop {
+				padding-right: 10px;
+				.point-start, .point-end {
+					width: 4px;
+					height: 4px;
+					border-radius: 4px;
+					background-color: #000;
+					transition: all 200ms ease-in-out;
+				}
+				.line {
+					width: 2px;
+					transform: scaleX(0.6);
+					height: 4px;
+					background-color: #000;
+					transition: all 200ms ease-in-out;
+				}
+				&.open {
+					.line {
+						height: 0;
+					}
+					.point-start {
+						transform: translateY(3px);
+					}
+					.point-end {
+						transform: translateY(-3px);
+					}
+				}
+			}
 			.iconfont {
 				transform: scale(0.8);
 				font-size: 12px;

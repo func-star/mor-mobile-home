@@ -50,11 +50,11 @@ export default class Aside extends Component {
 								<DropTitle className="menu-item flex-center-y c-po">
 									<i className={classNames('iconfont ' + item.icon)}></i>
 									<div className="flex-1">{item.name}</div>
-									<If condition={item.isOpen}>
-										<i className="iconfont icon-arrow-up p-r-20"></i>
-										<Else />
-										<i className="iconfont icon-arrow-down p-r-20"></i>
-									</If>
+									<div className={classNames('tag-drop flex-center flex-direction-col', { 'open': !item.isOpen })}>
+										<div className="point-start"></div>
+										<div className="line"></div>
+										<div className="point-end"></div>
+									</div>
 								</DropTitle>
 								<DropContent className="menu-child-group">
 									<For each="child" of={item.children} index="childIdx">
