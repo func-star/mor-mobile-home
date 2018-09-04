@@ -863,12 +863,12 @@ input[type="number"] {
   height: 0;
 }
 .page-aside .menu-group .menu-item .tag-drop.open .point-start {
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 .page-aside .menu-group .menu-item .tag-drop.open .point-end {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 .page-aside .menu-group .menu-item .iconfont {
   -webkit-transform: scale(0.8);
